@@ -1,0 +1,19 @@
+{
+  "name": "MechaBrew",
+  "description": "Home Brewing Automation with a BeagleBone Black",
+  "version": "0.0.1",
+  "authors": [
+  	"Greg Roe <greg.r.roe@gmail.com>"
+  ],
+  "private": true,
+  "dependencies": {
+  	"font-awesome": "4.3.0",
+  	"foundation": "5.5.1",
+  	"js-quantities":"https://github.com/gentooboontoo/js-quantities.git",
+  	"rem-unit-polyfill": ">=1.3.2",
+    "respond": ">=1.4.2"
+  },
+  "resolutions": {
+ 	 "jquery": "2.1.0"
+  }
+}
