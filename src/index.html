@@ -10,25 +10,23 @@
 </head>
 <body>
 
-<nav class="top-bar" data-topbar role="navigation">
-  <ul class="title-area">
-    <li class="name">
-      <h1><a href="index.html">MechaBrew</a></h1>
-    </li>
-     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
+<nav class="pure-menu pure-menu-horizontal topbar">
+    <a href="#" class="pure-menu-heading pure-menu-link">MechaBrew</a>
+    <ul class="pure-menu-list">
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Calculators</a></li>
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link">About</a></li>
+    </ul>
 </nav>
 
 <div class="row">
 	<div class="pid">
-		<h2>PID - RIMS</h2>
-		<input type="number">&nbsp;<span>&deg;F</span>
-		<input type="number">&nbsp;<span>&deg;F</span>
-		<ul class="stack button-group radius">
-		  <li><a href="#" class="button">UP</a></li>
-		  <li><a href="#" class="button">DOWN</a></li>
+		<h3>PID - RIMS</h3>
+		<label>Actual<input type="text"></label>
+		<label>Desired<input type="text"></label>
+		  <button class="pure-button">UP</button>
+		  <button class="pure-button">DOWN</button>
 		</ul>
+		<span class="label round radius"></span> Element status
 	</div>
 </div>
 

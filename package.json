@@ -21,7 +21,8 @@
     "grunt-contrib-sass": "^0.9.2",
     "grunt-contrib-uglify": "^0.8.0",
     "grunt-contrib-watch": "0.6.1",
-    "grunt-copy": "^0.1.0"
+    "grunt-copy": "^0.1.0",
+    "grunt-rename": "^0.1.4"
   },
   "engine": "node >= 0.4.1"
 }
