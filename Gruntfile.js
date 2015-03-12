@@ -44,6 +44,16 @@ module.exports = function(grunt) {
 			'build/css/style.css': 'src/scss/style.scss',
 		  }
 		}
+	},
+	watch: {
+		html: {
+	  		files: '**/*.html',
+			tasks: ['copy']
+		},
+		css: {
+	  		files: '**/*.scss',
+			tasks: ['sass']
+		}
 	}
   });
 
@@ -52,7 +62,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-copy');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   
-  grunt.registerTask('default', ['bowercopy', 'rename', 'uglify', 'copy', 'sass']);
+  grunt.registerTask('default', ['bowercopy', 'rename', 'uglify', 'copy', 'sass', 'watch']);
 
 };
