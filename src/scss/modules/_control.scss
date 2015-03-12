@@ -17,10 +17,20 @@
 	}
 }
 
+.controls {
+	background-color: #4a4a4a;
+}
+
 .display-only {
 	font-size: 1.8em !important;
 	font-weight: bold;
+}
+
+.pid .display-only, .temp .display-only {
 	color: red !important;
+}
+.timer .display-only {
+	color: rgb(62,201,75) !important;
 }
 
 button {

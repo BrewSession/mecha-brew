@@ -42,7 +42,7 @@
 
 <div class="row">
 	<div class="small-1 large-4 columns">
-		<div class="control pid pure-form pure-form-stacked">
+		<div class="control pid">
 			PID - Mash Tun
 			<div class="row collapse">
 				<div class="small-9 large-10 columns">
@@ -68,14 +68,72 @@
 			</div>
 			<div class="row">
 				<div class="small-9 large-12 columns">
-					<button class="tiny button">Set</button>
+					<button class="tiny button disabled">Set</button>
 				</div>
 			</div>
-			
 		</div><!-- .pid -->
 	</div>
-	<div class="small-1 large-4 columns"> Col2 </div>
-	<div class="small-1 large-4 columns"> Col3 </div>
+	<div class="small-1 large-4 columns">
+		<div class="control temp">
+			Temperature - HLT
+			<div class="row collapse">
+				<div class="small-9 large-10 columns">
+				  <input class="display-only" type="text" placeholder="152.3">
+				</div>
+				<div class="small-3 large-2 columns">
+				  <span class="postfix">&deg;F</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="small-1 large-4 columns">
+		<div class="control timer">
+			Timer - 1
+			<div class="row">
+				<div class="small-12 large-12 columns">
+				  <input class="display-only" type="text" placeholder="38:16">
+				</div>
+			</div>
+			<!--
+			<div class="progress success round"> 
+				<span class="meter" style="width: 60%"></span>
+			</div> -->
+			<div class="row">
+				<div class="small-12 large-6 columns">
+				  <button class="tiny alert button">Cancel</button>
+				</div>
+				<div class="small-12 large-6 columns">
+				  <button class="tiny secondary button">Pause</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="small-1 large-4 columns">
+		<div class="control pump">
+			Pump - 1
+			<div class="row">
+				<div class="small-12 large-12 columns">
+					<div class="switch round success">
+					  <input id="exampleCheckboxSwitch" type="checkbox">
+					  <label for="exampleCheckboxSwitch"></label>
+					</div>
+				</div>
+			</div> 
+		</div><!-- .pump -->
+	</div>
+	<div class="small-1 large-4 columns">
+		<div class="control temp">
+			Other
+		</div>
+	</div>
+	<div class="small-1 large-4 columns">
+		<div class="control timer">
+			Other
+		</div>
+	</div>
 </div>
 
 
