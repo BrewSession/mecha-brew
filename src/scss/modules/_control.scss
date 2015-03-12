@@ -12,13 +12,14 @@
 		border-radius: 1px;
 		background-color: #000;
 		border-width: 0;
-		color: $ghost !important;
+		color: $ghost;
 		text-align: right;
 	}
 }
 
 .display-only {
-	font-size: 1.4em !important;
+	font-size: 1.8em !important;
+	font-weight: bold;
 	color: red !important;
 }
 
