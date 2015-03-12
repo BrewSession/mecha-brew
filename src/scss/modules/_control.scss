@@ -1,0 +1,28 @@
+// common styles for all controls: pid, temp, timers, etc.
+
+.control {
+	background-color: rgba(255,255,255,0.1);
+	border-radius: 1px;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	border-top: 2px solid #4a4a4a;
+	margin: 20px;
+	padding: 0 20px 5px 20px;	
+	input {
+		border-radius: 1px;
+		background-color: #000;
+		border-width: 0;
+		color: $ghost !important;
+		text-align: right;
+	}
+}
+
+.display-only {
+	font-size: 1.4em !important;
+	color: red !important;
+}
+
+button {
+	margin-top: 1em !important;
+	width: 100%;
+}

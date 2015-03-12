@@ -11,29 +11,25 @@ module.exports = function(grunt) {
                 destPrefix: 'build'
             },
             files: {
-                'js/lib/rem.min.js': 'rem-unit-polyfill/js/rem.min.js'
+                'js/lib/rem.min.js': 'rem-unit-polyfill/js/rem.min.js',
+                'js/lib/jquery.min.js': 'jquery/dist/jquery.min.js',
             },
             folders: {
                 'fonts': 'font-awesome/fonts'
             }
         }
     },
-    rename: {
-        css: {
-            src: 'bower_components/pure/pure.css',
-            dest: 'bower_components/pure/_pure.scss'
-        }
-    },
     uglify: {
       js: {
-        'build/js/mecha-brew.min.js': ['src/js/app.js']
+        'build/js/mecha-brew.min.js': ['src/js/app.js'],
+        'build/js/lib/modernizr.min.js': ['bower_components/foundation/js/vendor/foundation.js']
       },
     },
 	copy: {
       html: {
         src: 'src/index.html',
         dest: 'build/index.html'
-      },
+      }
     },
     sass: {                             
 		dist: {                           
@@ -58,12 +54,11 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-bowercopy');
-  grunt.loadNpmTasks('grunt-rename');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-copy');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   
-  grunt.registerTask('default', ['bowercopy', 'rename', 'uglify', 'copy', 'sass', 'watch']);
+  grunt.registerTask('default', ['bowercopy', 'uglify', 'copy', 'sass', 'watch']);
 
 };
